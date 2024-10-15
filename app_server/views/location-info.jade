@@ -1,0 +1,89 @@
+extends layout
+include _includes/sharedHTMLfunctions
+
+block content
+  .row.banner
+    .col-12
+      h1 Bhavani photography
+  
+  .row
+    .col-12.col-lg-9
+      .row
+        .col-12.col-md-6
+          p.rating
+            i.fas.fa-star
+            i.fas.fa-star
+            i.fas.fa-star
+            i.far.fa-star
+            i.far.fa-star
+          p near malikarjuna temple, boduppal, hyderabad
+          
+          .card.card-primary
+            .card-block
+              h2.card-title Opening hours
+              p.card-text Monday - Friday : 7:00am - 7:00pm
+              p.card-text Saturday : 8:00am - 5:00pm
+              p.card-text Sunday : closed
+
+          .card.card-primary
+            .card-block
+              h2.card-title Facilities
+              span.badge.badge-warning
+                i.fa.fa-check
+                | &nbsp;photography
+              | &nbsp;
+              span.badge.badge-warning
+                i.fa.fa-check
+                | &nbsp;videography
+              | &nbsp;
+              span.badge.badge-warning
+                i.fa.fa-check
+                | &nbsp;outdoor shooting
+              | &nbsp;
+
+        .col-12.col-md-6.location-map
+          .card.card-primary
+            .card-block
+              h2.card-title Location map
+              img.img-fluid.rounded(src='http://maps.googleapis.com/maps/api/staticmap?center=51.455041,-0.9690884&zoom=17&size=400x350&sensor=false&markers=51.455041,-0.9690884&scale=2&key=AIzaSyCGHt5kpU7wGlVA4FaW8gnR8zfo0Az7MA8')
+ 
+
+    .row
+      .col-12
+        .card.card-primary.review-card
+          .card-block
+            a.btn.btn-primary.float-right(href='/location/review/new')
+              | Add review
+            h2.card-title Customer reviews
+            
+            .row.review
+              .col-12.no-gutters.review-header
+                span.rating
+                  i.fas.fa-star
+                  i.fas.fa-star
+                  i.fas.fa-star
+                  i.far.fa-star
+                  i.far.fa-star
+                span.reviewAuthor sindhu
+                small.reviewTimestamp 16 February 2020
+              .col-12
+                p great phtography nice coperation
+
+            .row.review
+              .col-12.no-gutters.review-header
+                span.rating
+                  i.fas.fa-star
+                  i.fas.fa-star
+                  i.fas.fa-star
+                  i.far.fa-star
+                  i.far.fa-star
+                span.reviewAuthor rahul
+                small.reviewTimestamp 14 February 2021
+              .col-12
+                p outdoor photography was awesome
+    
+    .col-12.col-lg-3
+      p.lead
+        | bhavani studio is an awesome place to get passport size photo,outdoor shootings,videography etc.
+      p
+        | If you've been and you like it - or if you don't - please leave a review to help other people just like you.
